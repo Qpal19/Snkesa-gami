@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+#snake {
+    position: absolute;
+    width: 20px; /* عرض جميع أجزاء الثعبان */
+    height: 20px; /* ارتفاع جميع أجزاء الثعبان */
+}
+
+.head {
+    background-color: green;
+    width: 30px; /* عرض رأس الثعبان */
+    height: 30px; /* ارتفاع رأس الثعبان */
+}
+
+.food, .obstacle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.food {
+    background-color: red;
+}
+
+.obstacle {
+    background-color: gray;
+}
+
+.arrow {
+    cursor: pointer;
+}
